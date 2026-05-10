@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nodo Corporativo Av. 14 Berazategui — Arquitectura de vanguardia y solidez estructural en el nuevo epicentro corporativo de Zona Sur." />
+  <title>Nodo Corporativo Av. 14 · Berazategui</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#00b4d8',
+            dark: '#0f172a',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="max-content flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#hero" style="text-decoration:none;">
+      <span class="nav-logo-sub">Nodo Corporativo</span>
+      <span class="nav-logo-main">AV. 14 · BERAZATEGUI</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="nav-desktop flex items-center gap-8">
+      <a href="#ubicacion" class="nav-link">Ubicación</a>
+      <a href="#plantas" class="nav-link">Plantas</a>
+      <a href="#ingenieria" class="nav-link">Ingeniería</a>
+      <a href="#contacto" class="nav-link" style="color:#fff; border: 1.5px solid rgba(0,180,216,0.5); padding:8px 20px; border-radius:3px; transition:background 0.2s;">Contacto</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="hamburger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="max-content">
+    <a href="#ubicacion" class="nav-link" style="font-size:0.9rem;">Ubicación</a>
+    <a href="#plantas" class="nav-link" style="font-size:0.9rem;">Plantas</a>
+    <a href="#ingenieria" class="nav-link" style="font-size:0.9rem;">Ingeniería</a>
+    <a href="#contacto" class="nav-link" style="font-size:0.9rem;">Contacto</a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="hero-supertitle">Nodo Corporativo Berazategui</span>
+    <h1 class="hero-title">
+      Diseñado para Liderar.<br />
+      Construido para Escalar.
+    </h1>
+    <p class="hero-desc">
+      Arquitectura de vanguardia y solidez estructural en el nuevo epicentro corporativo de Zona Sur. Un edificio que no solo aloja empresas — las proyecta.
+    </p>
+    <a href="#plantas" class="hero-cta">
+      Explorar los espacios
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     STRIP DE IMÁGENES
+══════════════════════════════════════════════ -->
+<div class="img-strip">
+  <div class="strip-item">
+    <img src="images/hero/fachada-aerea.webp" alt="Vista aérea del edificio" loading="lazy" />
+  </div>
+  <div class="strip-item">
+    <img src="images/hero/fachada-lateral.webp" alt="Fachada lateral" loading="lazy" />
+  </div>
+  <div class="strip-item">
+    <img src="images/hero/fachada-detalle.webp" alt="Detalle planta baja" loading="lazy" />
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     UBICACIÓN Y CONECTIVIDAD
+══════════════════════════════════════════════ -->
+<section id="ubicacion">
+  <!-- Mapa -->
+  <div class="map-wrapper fade-left">
+    <iframe
+      src="https://maps.google.com/maps?q=Calle+14+5976+Berazategui+Buenos+Aires+Argentina&output=embed"
+      title="Ubicación Nodo Corporativo Berazategui"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="map-overlay"></div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="ubicacion-content">
+    <div class="fade-up">
+      <span class="section-label">Conectividad Estratégica</span>
+      <div class="accent-line"></div>
+      <h2 class="section-title">Conectividad que<br />optimiza el tiempo.</h2>
+      <p class="section-body" style="margin-top:20px;">
+        En el cruce exacto entre la movilidad de la Zona Sur y la operatividad de su organización. A minutos de todo, sin perder un segundo.
+      </p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <div class="ub-item fade-up" style="--delay:0.1s">
+        <div class="ub-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div>
+          <div class="ub-label">Tiempo de acceso</div>
+          <div class="ub-value">20 min de CABA · 20 min de La Plata</div>
+        </div>
+      </div>
+
+      <div class="ub-item fade-up" style="--delay:0.2s">
+        <div class="ub-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div>
+          <div class="ub-label">Acceso vehicular</div>
+          <div class="ub-value">Calle colectora sin tráfico. Ingreso directo sin semáforos</div>
+        </div>
+      </div>
+
+      <div class="ub-item fade-up" style="--delay:0.3s">
+        <div class="ub-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="ub-label">Estacionamiento</div>
+          <div class="ub-value">Amplia capacidad en planta baja. Accesos diferenciados por tipo de usuario</div>
+        </div>
+      </div>
+
+      <div class="ub-item fade-up" style="--delay:0.4s">
+        <div class="ub-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="ub-label">Entorno</div>
+          <div class="ub-value">Zona arbolada consolidada. Bajo ruido y alta calidad ambiental</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     PLANTA BAJA COMERCIAL
+══════════════════════════════════════════════ -->
+<section id="planta-baja">
+  <div class="max-content">
+    <div style="max-width:700px;">
+      <span class="section-label fade-up">Planta Baja</span>
+      <div class="accent-line fade-up" style="--delay:0.05s"></div>
+      <h2 class="section-title fade-up" style="--delay:0.1s">Presencia de Marca<br />y Alto Tránsito.</h2>
+      <p class="section-body fade-up" style="--delay:0.2s; margin-top:20px;">
+        La planta baja es su tarjeta de presentación. Locales de doble altura unificables, con accesos independientes y flujos diferenciados. Baños completamente normados para personas con movilidad reducida.
+      </p>
+    </div>
+
+    <div class="pb-grid" style="margin-top:48px;">
+      <div class="pb-img fade-up" style="--delay:0.1s">
+        <img src="images/hero/fachada-principal.webp" alt="Fachada y acceso principal" loading="lazy" />
+      </div>
+      <div class="pb-img fade-up" style="--delay:0.2s">
+        <img src="images/hero/fachada-aerea.webp" alt="Vista aérea planta baja" loading="lazy" />
+      </div>
+      <div class="pb-img fade-up" style="--delay:0.3s; display:none;" id="pb-extra">
+        <img src="images/entorno/entorno.webp" alt="Entorno del edificio" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="fade-up" style="--delay:0.3s; margin-top:52px; display:grid; grid-template-columns:repeat(3,1fr); gap:2px; text-align:center;">
+      <div style="padding:36px 24px; border:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02);">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:300; color:var(--accent); letter-spacing:-0.02em;">+6m</div>
+        <div style="font-size:0.6rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:rgba(237,232,220,0.35); margin-top:10px;">Doble altura PB</div>
+      </div>
+      <div style="padding:36px 24px; border:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02); border-left:none; border-right:none;">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:300; color:var(--accent); letter-spacing:-0.02em;">100%</div>
+        <div style="font-size:0.6rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:rgba(237,232,220,0.35); margin-top:10px;">Normado accesibilidad</div>
+      </div>
+      <div style="padding:36px 24px; border:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02);">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:300; color:var(--accent); letter-spacing:-0.02em;">2+</div>
+        <div style="font-size:0.6rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:rgba(237,232,220,0.35); margin-top:10px;">Locales unificables</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     PLANTAS INTERACTIVAS
+══════════════════════════════════════════════ -->
+<section id="plantas">
+  <div class="max-content">
+    <div style="max-width:620px; margin-bottom:48px;">
+      <span class="section-label fade-up">Ingeniería Versátil</span>
+      <div class="accent-line fade-up" style="--delay:0.05s"></div>
+      <h2 class="section-title light fade-up" style="--delay:0.1s">Plantas que se adaptan<br />a su visión.</h2>
+      <p class="section-body fade-up" style="--delay:0.2s; color:rgba(255,255,255,0.55); margin-top:20px;">
+        Plantas libres estilo industrial con bandejas superiores pasacables. Una arquitectura que no le impone límites — los disuelve.
+      </p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-header fade-up" style="--delay:0.25s">
+      <button class="tab-btn active" data-tab="tab-openoffice">Space Free</button>
+      <button class="tab-btn" data-tab="tab-modular">Layout Modular</button>
+      <button class="tab-btn" data-tab="tab-uno">Open Office</button>
+      <button class="tab-btn" data-tab="tab-penthouse">Penthouse</button>
+    </div>
+
+    <!-- Panel: Space Free -->
+    <div id="tab-openoffice" class="tab-panel active">
+      <div class="tab-img">
+        <img src="images/plantas/planta-openoffice.webp" alt="Planta space free" loading="lazy" />
+        <div class="tab-img-overlay"></div>
+      </div>
+      <div class="tab-content">
+        <h3 style="font-size:1.5rem; font-weight:800; color:#fff; margin-bottom:16px; letter-spacing:-0.02em;">Espacio sin límites.</h3>
+        <p class="section-body" style="color:rgba(255,255,255,0.55);">
+          Plantas de 450 m² completamente libres, sin estructura intermedia. La configuración más amplia del edificio para quienes necesitan máxima libertad de diseño y circulación fluida.
+        </p>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Planta libre sin columnas</strong>
+            <span>Diseño estructural perimetral. Máxima flexibilidad interna sin obstáculos.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Bandejas pasacables superiores</strong>
+            <span>Red de instalaciones ocultables. Cableado estructurado de alta densidad.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Climatización independiente por piso</strong>
+            <span>Sistemas HVAC zonificados. Confort operacional garantizado durante las 24 hs.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel: Layout Modular -->
+    <div id="tab-modular" class="tab-panel">
+      <div class="tab-img">
+        <img src="images/plantas/planta-medica.webp" alt="Planta layout modular" loading="lazy" />
+        <div class="tab-img-overlay"></div>
+      </div>
+      <div class="tab-content">
+        <h3 style="font-size:1.5rem; font-weight:800; color:#fff; margin-bottom:16px; letter-spacing:-0.02em;">Infraestructura lista para operar.</h3>
+        <p class="section-body" style="color:rgba(255,255,255,0.55);">
+          La estructura de hormigón perimetral soporta cargas diferenciales superiores a las edilicias estándar. Las bandejas pasacables superiores admiten cableado de alta tensión e instalaciones de gases especiales. Divisiones modulares que se adaptan en días, no meses.
+        </p>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Carga estructural certificada</strong>
+            <span>Hormigón sólido perimetral. Soporta equipos de alta densidad sin refuerzos adicionales.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Divisiones modulares en días</strong>
+            <span>Tabiques desmontables y reconfigurables. De planta abierta a consultorios sin obra civil.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Alta tensión e instalaciones especiales</strong>
+            <span>Bandejas dimensionadas para cableado trifásico, fibra óptica y gases técnicos.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel: Open Office -->
+    <div id="tab-uno" class="tab-panel">
+      <div class="tab-img">
+        <img src="images/plantas/planta-uno.png" alt="Planta open office" loading="lazy" />
+        <div class="tab-img-overlay"></div>
+      </div>
+      <div class="tab-content">
+        <h3 style="font-size:1.5rem; font-weight:800; color:#fff; margin-bottom:16px; letter-spacing:-0.02em;">Colaboración sin fronteras.</h3>
+        <p class="section-body" style="color:rgba(255,255,255,0.55);">
+          Plantas libres de columnas intermedias que permiten diseñar el ambiente de trabajo ideal. Ideal para empresas tech, legales, financieras y servicios profesionales de alto volumen.
+        </p>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Planta libre sin columnas</strong>
+            <span>Diseño estructural perimetral. Máxima flexibilidad interna sin obstáculos.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Bandejas pasacables superiores</strong>
+            <span>Red de instalaciones ocultables. Cableado estructurado de alta densidad.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Climatización independiente por piso</strong>
+            <span>Sistemas HVAC zonificados. Confort operacional garantizado durante las 24 hs.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel: Penthouse -->
+    <div id="tab-penthouse" class="tab-panel">
+      <div class="tab-img">
+        <img src="images/plantas/Planta Terraza.png" alt="Planta penthouse terraza" loading="lazy" />
+        <div class="tab-img-overlay"></div>
+      </div>
+      <div class="tab-content">
+        <h3 style="font-size:1.5rem; font-weight:800; color:#fff; margin-bottom:16px; letter-spacing:-0.02em;">El Nivel Ejecutivo.</h3>
+        <p class="section-body" style="color:rgba(255,255,255,0.55);">
+          Aísle su central administrativa del flujo diario. Un espacio exclusivo en la cima, coronado por una terraza perimetral con vistas ininterrumpidas sobre el horizonte de Zona Sur.
+        </p>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Terraza perimetral 360°</strong>
+            <span>Vistas despejadas sobre el horizonte de Zona Sur. Espacio al aire libre exclusivo.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Nivel ejecutivo privado</strong>
+            <span>Acceso diferenciado por ascensor Otis Gen2. Circulación separada del resto del edificio.</span>
+          </div>
+        </div>
+
+        <div class="tab-feature">
+          <div class="tab-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="tab-feature-text">
+            <strong>Infraestructura premium</strong>
+            <span>Instalaciones eléctricas y de red de alta especificación. Listo para sala de dirección o centro de comando.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     DOSSIER DE INGENIERÍA
+══════════════════════════════════════════════ -->
+<section id="ingenieria">
+  <div class="max-content">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:24px; margin-bottom:0;">
+      <div style="max-width:520px;">
+        <span class="section-label fade-up">Dossier Técnico</span>
+        <div class="accent-line fade-up" style="--delay:0.05s"></div>
+        <h2 class="section-title light fade-up" style="--delay:0.1s">Construido<br />sobre Certezas.</h2>
+        <p class="section-body fade-up" style="--delay:0.2s; color:rgba(255,255,255,0.55); margin-top:20px;">
+          Cada especificación técnica fue elegida para garantizar operatividad continua, seguridad estructural y la más alta adaptabilidad funcional del mercado.
+        </p>
+      </div>
+      <button class="cta-pdf fade-up" style="--delay:0.3s;" data-open-modal>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+        </svg>
+        Ver Informe Cálculo de Estructuras
+      </button>
+    </div>
+
+    <!-- Galería de planos estructurales -->
+    <div class="planos-section fade-up" style="--delay:0.35s; margin-top:56px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <span style="font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); font-weight:600;">Documentación Técnica</span>
+        <div style="flex:1; height:1px; background:rgba(0,180,216,0.15);"></div>
+        <span style="font-size:0.7rem; color:rgba(255,255,255,0.3); letter-spacing:0.06em;">7 planos</span>
+      </div>
+      <div class="planos-strip">
+        <div class="plano-item">
+          <img src="images/Estructura/1.1 - Plano Estructura.jpg" alt="Plano Estructura 1.1" loading="lazy" />
+          <div class="plano-label">1.1 · Estructura</div>
+        </div>
+        <div class="plano-item">
+          <img src="images/Estructura/1.2 - Plano Estructura.jpg" alt="Plano Estructura 1.2" loading="lazy" />
+          <div class="plano-label">1.2 · Estructura</div>
+        </div>
+        <div class="plano-item">
+          <img src="images/Estructura/1.3 - Plano Estructura.jpg" alt="Plano Estructura 1.3" loading="lazy" />
+          <div class="plano-label">1.3 · Estructura</div>
+        </div>
+        <div class="plano-item">
+          <img src="images/Estructura/1.4 - Plano Estructura.jpg" alt="Plano Estructura 1.4" loading="lazy" />
+          <div class="plano-label">1.4 · Estructura</div>
+        </div>
+        <div class="plano-item">
+          <img src="images/Estructura/1.5 - Plano Estructura.jpg" alt="Plano Estructura 1.5" loading="lazy" />
+          <div class="plano-label">1.5 · Estructura</div>
+        </div>
+        <div class="plano-item">
+          <img src="images/Estructura/1.6 - Plano Estructura.jpg" alt="Plano Estructura 1.6" loading="lazy" />
+          <div class="plano-label">1.6 · Estructura</div>
+        </div>
+        <div class="plano-item">
+          <img src="images/Estructura/1.7 - Plano Estructura.jpg" alt="Plano Estructura 1.7" loading="lazy" />
+          <div class="plano-label">1.7 · Estructura</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ing-grid" style="margin-top:64px;">
+
+      <!-- Card: Ascensor -->
+      <div class="ing-card fade-up" style="--delay:0.1s">
+        <div class="ing-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="8 9 12 5 16 9"/><polyline points="16 15 12 19 8 15"/>
+          </svg>
+        </div>
+        <div class="ing-card-sub">Movilidad Vertical</div>
+        <div class="ing-card-title">Ascensor Otis Gen 2</div>
+        <p class="ing-card-body">
+          Cabina para 6 pasajeros con puertas de <strong style="color:#fff;">80 cm de apertura</strong>: accesibilidad total para el traslado, sillas de ruedas. Tecnología de tracción directa sin sala de máquinas.
+        </p>
+
+        <div class="metric">
+          <div class="metric-header">
+            <span class="metric-label">Vibración de cabina</span>
+            <span class="metric-value">12 mg</span>
+          </div>
+          <div class="metric-bar-bg">
+            <div class="metric-bar-fill" style="--target-width: 12%;"></div>
+          </div>
+          <div class="metric-compare">Estándar de confort premium: ≤ 15 mg · Edificios convencionales: 35–60 mg</div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-header">
+            <span class="metric-label">Nivel sonoro en cabina</span>
+            <span class="metric-value">55 dBA</span>
+          </div>
+          <div class="metric-bar-bg">
+            <div class="metric-bar-fill" style="--target-width: 28%;"></div>
+          </div>
+          <div class="metric-compare">Equivalente a una conversación tranquila. Traslados imperceptibles.</div>
+        </div>
+      </div>
+
+      <!-- Card: Estructura -->
+      <div class="ing-card fade-up" style="--delay:0.2s">
+        <div class="ing-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20h20M4 20V10l8-8 8 8v10M9 20v-5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5"/>
+          </svg>
+        </div>
+        <div class="ing-card-sub">Estructura</div>
+        <div class="ing-card-title">Hormigón Sólido Perimetral</div>
+        <p class="ing-card-body">
+          El hormigón armado perimetral no es solo estructura — es la garantía de un edificio que no cede, no vibra y no envejece. Una base que absorbe cualquier uso sin necesidad de refuerzos, adaptaciones ni obras posteriores.
+        </p>
+
+        <div class="metric">
+          <div class="metric-header">
+            <span class="metric-label">Durabilidad comprobada</span>
+          </div>
+          <div class="metric-bar-bg">
+            <div class="metric-bar-fill" style="--target-width: 95%;"></div>
+          </div>
+          <div class="metric-compare">El hormigón armado perimetral garantiza décadas de vida útil sin mantenimiento estructural extraordinario.</div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-header">
+            <span class="metric-label">Rigidez y control de vibraciones</span>
+          </div>
+          <div class="metric-bar-bg">
+            <div class="metric-bar-fill" style="--target-width: 90%;"></div>
+          </div>
+          <div class="metric-compare">Masa estructural que amortigua vibraciones de equipos y tráfico. Ideal para actividades que requieren estabilidad permanente.</div>
+        </div>
+      </div>
+
+      <!-- Card: Instalaciones -->
+      <div class="ing-card fade-up" style="--delay:0.3s">
+        <div class="ing-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div class="ing-card-sub">Infraestructura</div>
+        <div class="ing-card-title">Instalaciones 100% Flexibles</div>
+        <p class="ing-card-body">
+          Todo el cableado estructurado está tendido en <strong style="color:#fff;">Sintenax</strong> — el sistema de bandejas pasacables y cañería en <strong style="color:#fff;">Samak</strong> que permite reemplazar, ampliar o redirigir cualquier circuito sin obra civil. Una instalación que se adapta a su operación en horas, no en semanas.
+        </p>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+          <div style="padding:18px; background:rgba(181,137,58,0.06); border:1px solid rgba(181,137,58,0.15);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:var(--accent);">∞</div>
+            <div style="font-size:0.62rem; font-weight:400; color:rgba(237,232,220,0.35); margin-top:5px; letter-spacing:0.06em;">Adaptaciones sin límite</div>
+          </div>
+          <div style="padding:18px; background:rgba(181,137,58,0.06); border:1px solid rgba(181,137,58,0.15);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:var(--accent);">0 h</div>
+            <div style="font-size:0.62rem; font-weight:400; color:rgba(237,232,220,0.35); margin-top:5px; letter-spacing:0.06em;">Sin obra para modificar</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Sustentabilidad -->
+      <div class="ing-card fade-up" style="--delay:0.4s">
+        <div class="ing-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22V12M12 12C12 7 7 3 3 3c0 9 4 14 9 16M12 12c0-5 5-9 9-9 0 9-4 14-9 16"/>
+          </svg>
+        </div>
+        <div class="ing-card-sub">Eficiencia</div>
+        <div class="ing-card-title">Piel de Vidrio de Alta Performance</div>
+        <p class="ing-card-body">
+          Muro cortina con vidrio low-e laminado que reduce la ganancia calorífica hasta un 40% respecto del vidrio simple. Menor costo en refrigeración y confort térmico superior durante las cuatro estaciones.
+        </p>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+          <div style="padding:18px; background:rgba(181,137,58,0.06); border:1px solid rgba(181,137,58,0.15);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:var(--accent);">−40%</div>
+            <div style="font-size:0.62rem; font-weight:400; color:rgba(237,232,220,0.35); margin-top:5px; letter-spacing:0.06em;">Ganancia calorífica</div>
+          </div>
+          <div style="padding:18px; background:rgba(181,137,58,0.06); border:1px solid rgba(181,137,58,0.15);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:var(--accent);">LED</div>
+            <div style="font-size:0.62rem; font-weight:400; color:rgba(237,232,220,0.35); margin-top:5px; letter-spacing:0.06em;">Iluminación eficiente</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     PENTHOUSE / SUM
+══════════════════════════════════════════════ -->
+<section id="penthouse">
+  <div class="penthouse-bg"></div>
+  <div class="penthouse-overlay"></div>
+  <div class="penthouse-content">
+    <div class="penthouse-tag fade-up">Nivel Ejecutivo · Penthouse</div>
+    <h2 class="penthouse-title fade-up" style="--delay:0.1s">El Nivel Ejecutivo.<br />Vistas 360°.</h2>
+    <p class="penthouse-body fade-up" style="--delay:0.2s">
+      Aísle su central administrativa del flujo diario. Un espacio exclusivo en la cima, coronado por una terraza perimetral con vistas ininterrumpidas sobre el horizonte de Zona Sur.
+    </p>
+    <a href="#contacto" class="hero-cta fade-up" style="--delay:0.3s; display:inline-flex; margin-top:32px;">
+      Consultar disponibilidad
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     FORMULARIO DE CONTACTO
+══════════════════════════════════════════════ -->
+<section id="contacto">
+  <div class="max-content">
+    <div class="contact-wrapper">
+
+      <!-- Info -->
+      <div class="contact-info">
+        <span class="section-label fade-up">Contacto Corporativo</span>
+        <div class="accent-line fade-up" style="--delay:0.05s"></div>
+        <h2 class="section-title fade-up" style="--delay:0.1s">Un espacio a la medida<br />de su crecimiento.</h2>
+        <p class="section-body fade-up" style="--delay:0.2s; margin-top:20px;">
+          Nuestro equipo técnico y comercial está disponible para preparar un dossier personalizado con planos, especificaciones de ingeniería y condiciones de operación adaptadas a su actividad.
+        </p>
+
+        <div class="contact-badge fade-up" style="--delay:0.3s">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Respuesta en menos de 24 hs hábiles
+        </div>
+
+        <div class="contact-info-box fade-up" style="--delay:0.4s">
+          <div style="font-size:0.58rem; font-weight:500; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent); margin-bottom:20px;">Información de contacto</div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; align-items:center; gap:14px; color:rgba(237,232,220,0.6); font-size:0.85rem; font-weight:300;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              info@nodocorporativo.com.ar
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; color:rgba(237,232,220,0.6); font-size:0.85rem; font-weight:300;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              +54 11 0000-0000
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; color:rgba(237,232,220,0.6); font-size:0.85rem; font-weight:300;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              Calle 14 Nº 5976 esq. Calle 160, Berazategui
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="fade-right" style="--delay:0.15s">
+        <form id="contact-form" action="https://formspree.io/f/mbdwanrd" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Juan Martínez" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="empresa">Empresa / Institución</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Clínica San Martín" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email corporativo</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="juan@empresa.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cargo">Cargo</label>
+              <input type="text" id="cargo" name="cargo" class="form-input" placeholder="Director Médico" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mensaje">Mensaje (opcional)</label>
+            <textarea id="mensaje" name="mensaje" class="form-input" rows="4" placeholder="Cuéntenos brevemente sobre sus necesidades de espacio..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="interes">Tipo de consulta</label>
+            <select id="interes" name="interes" class="form-input">
+              <option value="">Seleccionar...</option>
+              <option value="alquiler-total">Alquiler edificio completo</option>
+              <option value="alquiler-piso">Alquiler por piso</option>
+              <option value="compra">Compra</option>
+              <option value="dossier">Solo solicitar Dossier Técnico</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Solicitar Dossier Técnico e Ingeniería
+          </button>
+
+          <div id="form-success" class="form-success">
+            ¡Gracias! Recibirá el dossier en su correo dentro de las próximas 24 hs hábiles.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer>
+  <div class="max-content">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo-sub">Nodo Corporativo</span>
+        <div class="footer-logo-wrap">
+          <div class="footer-logo-main">AV. 14 · BERAZATEGUI</div>
+          <img src="images/logos/Logo Restaket.png" alt="Restaket Real State Market" class="footer-dev-logo" />
+        </div>
+        <p class="footer-desc">
+          Arquitectura de vanguardia y solidez estructural en el nuevo epicentro corporativo de Zona Sur. Diseñado para liderar. Construido para escalar.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <a href="#hero" class="footer-link">Inicio</a>
+        <a href="#ubicacion" class="footer-link">Ubicación</a>
+        <a href="#plantas" class="footer-link">Plantas</a>
+        <a href="#ingenieria" class="footer-link">Ingeniería</a>
+        <a href="#contacto" class="footer-link">Contacto</a>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Comercialización exclusiva</div>
+        <div class="footer-proficio-wrap">
+          <img src="images/logos/Proficio Logo.png" alt="Proficio Propiedades" class="footer-proficio-logo" />
+        </div>
+        <p style="font-size:0.72rem; color:rgba(237,232,220,0.38); margin-top:10px; line-height:1.6; max-width:200px;">
+          Consultas y visitas a cargo de<br/>Proficio Propiedades.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <a href="mailto:info@proficio.com.ar" class="footer-link">info@proficio.com.ar</a>
+        <a href="tel:+541149465540" class="footer-link">+54 11 4946-5540</a>
+        <span class="footer-link" style="cursor:default;">Calle 14 Nº 5976 esq. Calle 160</span>
+        <span class="footer-link" style="cursor:default;">Berazategui, Buenos Aires</span>
+        <span class="footer-link" style="cursor:default; margin-top:8px;">Argentina</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Nodo Corporativo Av. 14. Todos los derechos reservados.</span>
+      <span>Desarrollado con precisión · Antigravity Studio</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════════
+     MODAL PDF
+══════════════════════════════════════════════ -->
+<div id="modal-pdf" role="dialog" aria-modal="true" aria-label="Solicitar dossier técnico">
+  <div class="modal-box">
+    <div class="modal-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+      </svg>
+    </div>
+    <h3 class="modal-title">Informe de Cálculo de Estructuras</h3>
+    <p class="modal-body">
+      Estudio de ingeniería de estructuras de hormigón del proyecto.<br/><br/>
+      <strong style="color:#fff;">Ing. Manuel Marcelo Gurreri</strong><br/>
+      <span style="font-size:0.82rem; color:rgba(237,232,220,0.45);">Ingeniero estructural responsable del proyecto</span><br/><br/>
+      El informe completo está disponible bajo solicitud a nuestro equipo técnico.
+    </p>
+    <a href="#contacto" class="modal-cta" data-close-modal>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      Solicitar por formulario
+    </a>
+    <br />
+    <button class="modal-close" data-close-modal>Cerrar</button>
+  </div>
+</div>
+
+
+<!-- ── Lightbox Planos ───────────────────────────────────────── -->
+<div id="lightbox-planos" role="dialog" aria-modal="true" aria-label="Ver plano">
+  <button class="lb-close" id="lb-close" aria-label="Cerrar">&#x2715;</button>
+  <button class="lb-arrow lb-prev" id="lb-prev" aria-label="Anterior">&#8249;</button>
+  <div class="lb-img-wrap">
+    <img id="lb-img" src="" alt="" />
+  </div>
+  <button class="lb-arrow lb-next" id="lb-next" aria-label="Siguiente">&#8250;</button>
+  <div class="lb-label" id="lb-label"></div>
+</div>
+
+<!-- ── Scripts ──────────────────────────────────────────────── -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
